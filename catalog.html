@@ -5,17 +5,17 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header>
+    <header class="page-header">
       <nav class="navigation">
-        <img src="index.html" alt="Логотип">
+        <img src="#" alt="Логотип">
         <ul class="navigation-list">
-          <li class="navigation-item">Главная</li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="index.html">Главная</a>
+          </li>
           <li class="navigation-item">
             <a href="#" class="navigation-link">О Седоне</a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Гостиницы</a>
-          </li>
+          <li class="navigation-item">Гостиницы</li>
         </ul>
       </nav>
       <div class="actions">
@@ -33,7 +33,7 @@
       </div>
     </header>
     <main>
-      <header class="breadcrumbs">
+      <header class="hotels-header">
         <h1 class="visually-hidden">Гостиницы Седоны</h1>
         <ul class="breadcrumbs-list">
           <li class="breadcrumbs-item">
@@ -242,7 +242,9 @@
           </a>
         </address>
       </section>
-      <img src="#" alt="Логотип htmlacademy">
+      <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+        <img src="#" alt="Логотип htmlacademy">
+      </a>
     </footer>
   </body>
 </html>
