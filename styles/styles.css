@@ -51,15 +51,60 @@ body {
     text-align: center;
 }
 
-.advantages-list {
+.advantages {
     text-align: center;
 }
 
+.advantages-item:first-child {
+    color: #ffffff;
+    background-color: #83B3D3;
+}
+
+.advantages-item:last-child {
+    color: #ffffff;
+    background-color: #83B3D3;
+}
+
 .advantages-title,
-.services-title {
+.services-title,
+.catalog-title {
     font-size: 30px;
-    font-weight: 700;
     line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.control,
+.hotels-type-label {
+    font-size: 18px;
+    line-height: 23px;
+    color:#ffffff;
+}
+
+.breadcrumbs-item {
+    font-size: 16px;
+    line-height: 21px;
+    color: #ffffff;
+}
+
+.hotels-filter-title {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.hotels-item-link {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000000;
+}
+
+.hotels-item-rating {
+    font-size: 16px;
+    line-height: 20px;
     text-transform: uppercase;
 }
 
@@ -72,7 +117,9 @@ body {
 }
 
 .advantages-description,
-.services-description {
+.services-description,
+.hotels-item-type,
+.hotels-item-price {
     font-size: 18px;
     line-height: 21px;
 }
@@ -103,14 +150,76 @@ body {
     color: #ffffff;
 }
 
+.font-black {
+    color:#000000
+}
+
+.hotels-title {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 78px;
+    color: #ffffff;
+}
+
 .hotels-search {
     text-align: center;
     background-color: #ffffff;
     height: 406px;
 }
 
+.catalog-sort {
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+}
+
 .button {
+    font-family: "PT Sans", sans-serif;
     font-size: 20px;
     line-height: 36px;
+    font-weight: 700;
     color: #ffffff;
+    background-color: #756157;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.actions-button,
+.hotels-button {
+    font-family: "PT Sans", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #756157;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.additional {
+    background-color: #83B3D3;
+}
+
+.optional {
+    background-color: #7DB54F;
+}
+
+.none {
+    background: none;
+}
+
+.hotels-container {
+    background-image: url(../images/backgrounds/catalog-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* height: 412px; Планирую указать высоту позже,
+    но пока не буду, т.к. верстка "ломается" */
+}
+
+.contacts-phone {
+    font-style: normal;
+    font-size: 40px;
+    line-height: 40px;
+    text-decoration: none;
+    color: #000000;
 }
