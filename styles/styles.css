@@ -1,0 +1,116 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+body {
+    font-family: "PT Sans", sans-serif;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 400;
+    background-color: #fbf7f4;
+    color: #000000
+}
+
+.page-header {
+    background-color: #ffffff;
+}
+
+.actions-button {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color:#ffffff;
+}
+
+.navigation-link {
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.welcome {
+    background-image: url("../images/backgrounds/index-background.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 485px;
+    text-align: center;
+}
+
+.advantages-list {
+    text-align: center;
+}
+
+.advantages-title,
+.services-title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.advantages-subtitle,
+.services-subtitle {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.advantages-description,
+.services-description {
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.services {
+    text-align: center;
+}
+
+.subscription {
+    background-image: url("../images/backgrounds/subscribe-background.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 415px;
+    text-align: center;
+}
+
+.subscription-title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.subscription-description {
+    font-size: 22px;
+    line-height: 26px;
+    color: #ffffff;
+}
+
+.hotels-search {
+    text-align: center;
+    background-color: #ffffff;
+    height: 406px;
+}
+
+.button {
+    font-size: 20px;
+    line-height: 36px;
+    color: #ffffff;
+}
