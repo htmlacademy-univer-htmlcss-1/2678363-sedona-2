@@ -136,6 +136,8 @@ body {
     text-align: center;
 }
 
+
+
 .subscription-title {
     font-size: 30px;
     font-weight: 700;
@@ -204,8 +206,8 @@ body {
     background-color: #7DB54F;
 }
 
-.none {
-    background: none;
+.hidden {
+    background-image: none;
 }
 
 .hotels-container {
