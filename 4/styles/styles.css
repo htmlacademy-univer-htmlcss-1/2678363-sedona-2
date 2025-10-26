@@ -20,7 +20,8 @@ body {
     line-height: 26px;
     font-weight: 400;
     background-color: #fbf7f4;
-    color: #000000
+    color: #000000;
+    width: 1200px;
 }
 
 .page-header {
@@ -39,7 +40,6 @@ body {
     font-size: 20px;
     font-weight: 700;
     text-decoration: none;
-    text-transform: uppercase;
     color: #000000;
 }
 
@@ -53,6 +53,10 @@ body {
 
 .advantages {
     text-align: center;
+}
+
+.advantages-item {
+    height: 385px;
 }
 
 .advantages-item:first-child {
@@ -72,6 +76,28 @@ body {
     line-height: 36px;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+.services-item {
+    height: 385px;
+}
+
+.services-item.accomodation {
+    background-image: url("../images/icons/sedona-advantages/house.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.services-item.food {
+    background-image: url("../images/icons/sedona-advantages/burger.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.services-item.souvenirs {
+    background-image: url("../images/icons/sedona-advantages/present.svg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .control,
@@ -136,8 +162,6 @@ body {
     text-align: center;
 }
 
-
-
 .subscription-title {
     font-size: 30px;
     font-weight: 700;
@@ -184,26 +208,91 @@ body {
     background-color: #756157;
     text-decoration: none;
     text-transform: uppercase;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #615048;
+}
+
+.button:focus {
+    background-color: #615048;
+}
+
+.button:active {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.button:disabled {
+    background-color: #E5E5E5;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .actions-button,
 .hotels-button {
-    font-family: "PT Sans", sans-serif;
     font-size: 16px;
     line-height: 20px;
-    font-weight: 700;
-    color: #ffffff;
-    background-color: #756157;
-    text-decoration: none;
-    text-transform: uppercase;
 }
 
 .additional {
     background-color: #83B3D3;
 }
 
+.additional:hover {
+    background-color: #68A2CA;
+}
+
+.additional:focus{
+    background-color: #68A2CA;
+}
+
+.additional:active {
+    color: rgba(255, 255, 255, 0.3);
+}
+
 .optional {
     background-color: #7DB54F;
+}
+
+.optional:hover {
+    background-color: #6C9E42;
+}
+
+.optional:focus {
+    background-color: #6C9E42;
+}
+
+.optional:active {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.optional:disabled {
+    background-color: #E5E5E5;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.transparent {
+    background-color: transparent;
+}
+
+.transparent:hover {
+    background-color: transparent;
+    opacity: 0.6;
+}
+
+.transparent:focus {
+    background-color: transparent;
+    border: 3px solid #83B3D3;
+}
+
+.transparent:active {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.transparent:disabled {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.1);
 }
 
 .hidden {
