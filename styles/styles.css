@@ -14,18 +14,64 @@
     font-display: swap;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    margin: 0;
+    display: flex;
+    min-height: 100%;
     font-family: "PT Sans", sans-serif;
     font-size: 22px;
     line-height: 26px;
     font-weight: 400;
-    background-color: #fbf7f4;
     color: #000000;
+    background-color: #F2F2F2;
+}
+
+.container {
+    background-color: #FFFFFF;
     width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .page-header {
-    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 70px;
+    box-sizing: border-box;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation-logo {
+    margin-right: 28px;
+}
+
+.navigation-list,
+.actions-list {
+    padding: 0;
+    margin: 0;
+}
+
+.navigation-list {
+    width: 339px;
+}
+
+.actions-list {
+    width: 268px;
+}
+
+.navigation-link {
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000000;
 }
 
 .actions-button {
@@ -36,11 +82,8 @@ body {
     color:#ffffff;
 }
 
-.navigation-link {
-    font-size: 20px;
-    font-weight: 700;
-    text-decoration: none;
-    color: #000000;
+.main-container {
+    flex-grow: 1;
 }
 
 .welcome {
@@ -55,7 +98,15 @@ body {
     text-align: center;
 }
 
+.advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
 .advantages-item {
+    width: 400px;
     height: 385px;
 }
 
@@ -69,6 +120,11 @@ body {
     background-color: #83B3D3;
 }
 
+.advantages-image {
+    width: 800px;
+    height: 385px;
+}
+
 .advantages-title,
 .services-title,
 .catalog-title {
@@ -78,7 +134,14 @@ body {
     text-transform: uppercase;
 }
 
+.services-list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
 .services-item {
+    width: 400px;
     height: 385px;
 }
 
@@ -120,6 +183,26 @@ body {
     color: #ffffff;
 }
 
+.hotels-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 1060px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.hotels-item {
+    width: 340px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.hotels-item:nth-child(3n) {
+    margin-right: 0;
+}
+
 .hotels-item-link {
     font-size: 24px;
     line-height: 28px;
@@ -128,10 +211,30 @@ body {
     color: #000000;
 }
 
+.hotel-type-price-container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .hotels-item-rating {
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
+}
+
+.pagination {
+    display: flex;
+    align-items: baseline;
+    width: 1060px;
+    height: 60px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.pagination-item {
+    width: 60px;
+    height: 60px;
+    margin-right: 8px;
 }
 
 .advantages-subtitle,
@@ -180,23 +283,60 @@ body {
     color:#000000
 }
 
+.hotels-container {
+    background-image: url(../images/backgrounds/catalog-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 35px 70px 70px 70px;
+    width: 1060px;
+}
+
+.hotels-form {
+    height: 160px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hotels-filter-list {
+    margin: 0;
+    padding: 0;
+}
+
 .hotels-title {
     font-size: 60px;
     font-weight: 700;
     line-height: 78px;
     color: #ffffff;
+    margin: 0;
+}
+
+.hotels-form-buttons {
+    display: flex;
+    flex-direction: column;
 }
 
 .hotels-search {
     text-align: center;
-    background-color: #ffffff;
     height: 406px;
+}
+
+.catalog-top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1060px;
+    margin: 0 auto;
+}
+
+.catalog-view-tools {
+    display: flex;
 }
 
 .catalog-sort {
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 21px;
+    align-self: center;
 }
 
 .button {
@@ -223,11 +363,6 @@ body {
     color: rgba(255, 255, 255, 0.3);
 }
 
-.button:disabled {
-    background-color: #E5E5E5;
-    color: rgba(255, 255, 255, 0.3);
-}
-
 .actions-button,
 .hotels-button {
     font-size: 16px;
@@ -247,6 +382,7 @@ body {
 }
 
 .additional:active {
+    background-color: #83B3D3;
     color: rgba(255, 255, 255, 0.3);
 }
 
@@ -263,9 +399,12 @@ body {
 }
 
 .optional:active {
+    background-color: #7DB54F;
     color: rgba(255, 255, 255, 0.3);
 }
 
+.button:disabled,
+.additional:disabled,
 .optional:disabled {
     background-color: #E5E5E5;
     color: rgba(255, 255, 255, 0.3);
@@ -299,12 +438,19 @@ body {
     background-image: none;
 }
 
-.hotels-container {
-    background-image: url(../images/backgrounds/catalog-background.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    /* height: 412px; Планирую указать высоту позже,
-    но пока не буду, т.к. верстка "ломается" */
+.contacts {
+    display: flex;
+    width: 100%;
+    height: 120px;
+    justify-content: space-between;
+}
+
+.social {
+    display: flex;
+}
+
+.social-list {
+    display: flex;
 }
 
 .contacts-phone {
