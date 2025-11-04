@@ -27,16 +27,16 @@
         <div class="actions">
           <ul class="actions-list">
             <li class="actions-item">
-              <a class="actions-search" href="#">
+              <a class="actions-link actions-search" href="#">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
             <li class="actions-item">
-              <a class="actions-favourites" href="#">
+              <a class="actions-link actions-favourites" href="#">
                 <span class="visually-hidden">Избранное</span>
               </a>
             </li>
-            <li>
+            <li class="actions-item">
               <button type="button" class="button actions-button">Хочу сюда!</button>
             </li>
           </ul>
@@ -45,15 +45,15 @@
       <main class="main-container index-main">
         <div class="page-container">
           <section class="welcome">
-            <h1 class="visually-hidden" hidden>Добро пожаловать в Седону</h1>
+            <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
             <img src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать в прекрасную Седону. 'Потому что Гранд-Каньон — отстой'">
           </section>
           <section class="advantages">
             <header class="advantages-header">
               <h2 class="visually-hidden">Преимущества Седоны</h2>
-              <p class="advantages-title">Седона — небольшой городок в Аризоне,<br>
+              <p class="advantages-title">Седона — небольшой городок в Аризоне,
                 заслуживающий большего!</p>
-              <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+              <p class="advantages-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
             </header>
             <ul class="advantages-list">
               <li class="advantages-item">
@@ -95,37 +95,45 @@
             </ul>
           </section>
           <section class="services">
-            <h2 class="services-title">Приезжайте в Седону отдохнуть<br>
-            в комфорте и уюте!</h2>
-            <p>Опытный персонал и качественное обслуживание!</p>
+            <div class="services-container">
+              <h2 class="services-title">Приезжайте в Седону отдохнуть<br>
+                в комфорте и уюте!</h2>
+              <p class="services-text">Опытный персонал и качественное обслуживание!</p>
+            </div>
             <ul class="services-list">
-              <li class="services-item accomodation">
-                <h3 class="services-subtitle">Жильё</h3>
-                <p class="services-description">
-                  Рекомендуем пожить в настоящем мотеле, всё как в кино!
-                </p>
+              <li class="services-item">
+                <div class="services-item-container accomodation">
+                  <h3 class="services-subtitle">Жильё</h3>
+                  <p class="services-description">
+                    Рекомендуем пожить в настоящем мотеле, всё как в кино!
+                  </p>
+                </div>
               </li>
-              <li class="services-item food">
-                <h3 class="services-subtitle">Еда</h3>
-                <p class="services-description">
-                  Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
-                </p>
+              <li class="services-item ">
+                <div class="services-item-container food">
+                  <h3 class="services-subtitle">Еда</h3>
+                  <p class="services-description">
+                    Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
+                  </p>
+                </div>
               </li>
-              <li class="services-item souvenirs">
-                <h3 class="services-subtitle">Сувениры</h3>
-                <p class="services-description">
-                  Не только китайского, но и настоящего местного производства!
-                </p>
+              <li class="services-item ">
+                <div class="services-item-container souvenirs">
+                  <h3 class="services-subtitle">Сувениры</h3>
+                  <p class="services-description">
+                    Не только китайского, но и настоящего местного производства!
+                  </p>
+                </div>
               </li>
             </ul>
           </section>
-          <div class="hotels-search">
+          <section class="hotels-search">
             <h2 class="hotels-search-title">Заинтересовались?</h2>
             <p class="hotels-search-text">
               Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
             </p>
             <a class="button" href="catalog.html">Поиск гостиницы в Седоне</a>
-          </div>
+          </section>
         </div>
       </main>
       <footer class="page-footer">
@@ -140,21 +148,21 @@
           </form>
         </section>
         <section class="contacts">
-          <h2 class="visually-hidden" hidden>Контакты</h2>
+          <h2 class="visually-hidden">Контакты</h2>
           <address class="social">
             <ul class="social-list">
               <li class="social-item vk">
-                <a href="https://vk.com/htmlacademy">
-                  <span class="visually-hidden vk">ВКонтакте</span>
+                <a class="social-link" href="https://vk.com/htmlacademy">
+                  <span class="visually-hidden">ВКонтакте</span>
                 </a>
               </li>
               <li class="social-item telegram">
-                <a href="https://t.me/htmlacademy">
+                <a class="social-link" href="https://t.me/htmlacademy">
                   <span class="visually-hidden">Telegram</span>
                 </a>
               </li>
               <li class="social-item youtube">
-                <a href="https://www.youtube.com/user/htmlacademyru">
+                <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
                   <span class="visually-hidden">YouTube</span>
                 </a>
               </li>
