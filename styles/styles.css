@@ -310,24 +310,69 @@ body {
 }
 
 .hotels-list {
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 340px 340px 340px;
+    gap: 20px;
+    list-style-type: none;
     width: 1060px;
     padding: 0;
     margin: 0 auto;
-    list-style-type: none;
 }
 
 .hotels-item {
-    width: 340px;
+    display: grid;
+    grid-template-columns: 140px 140px;
+    grid-template-areas:
+        "link  link"
+        "type  price"
+        "btn   btn-2"
+        "stars rating";
     padding: 20px;
-    margin-right: 20px;
-    box-sizing: border-box;
+    gap: 16px;
 }
 
-.hotels-item:nth-child(3n) {
-    margin-right: 0;
+.hotels-item-image {
+    margin-bottom: 10px;
+}
+
+.hotels-item-link {
+    grid-area: link;
+}
+
+.hotels-item-title {
+    margin: 0;
+}
+
+.hotels-item-type {
+    grid-area: type;
+    margin: 0;
+}
+
+.hotels-item-price {
+    grid-area: price;
+    margin: 0;
+    margin-left: auto;
+}
+
+.hotels-button {
+    grid-area: btn;
+    padding: 8px 18px;
+    text-align: center;
+}
+
+.additional,
+.optional {
+    grid-area: btn-2;
+}
+
+.stars-number {
+    grid-area: stars;
+}
+
+.hotels-item-rating {
+    grid-area: rating;
+    margin: 0;
+    padding: 9px 22px 8px 23px;
 }
 
 .hotels-item-link {
@@ -336,11 +381,6 @@ body {
     font-weight: 700;
     text-decoration: none;
     color: #000000;
-}
-
-.hotel-type-price-container {
-    display: flex;
-    justify-content: space-between;
 }
 
 .hotels-item-rating {
