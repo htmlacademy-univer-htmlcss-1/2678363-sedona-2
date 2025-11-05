@@ -322,13 +322,15 @@ body {
 .hotels-item {
     display: grid;
     grid-template-columns: 140px 140px;
+    grid-template-rows: 1fr 21px 36px 37px;
     grid-template-areas:
         "link  link"
         "type  price"
         "btn   btn-2"
         "stars rating";
     padding: 20px;
-    gap: 16px;
+    column-gap: 20px;
+    row-gap: 16px;
 }
 
 .hotels-item-image {
