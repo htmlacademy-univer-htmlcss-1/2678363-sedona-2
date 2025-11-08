@@ -92,7 +92,7 @@ body {
     padding: 20px 16px;
 }
 
-.current {
+.current-page {
     text-decoration: 2px underline #756257;
     text-underline-offset: 24px;
 }
@@ -226,19 +226,15 @@ body {
     margin-bottom: 30px;
 }
 
-.advantages-decoration-border {
+.advantages-decoration-line {
     width: 60px;
-    border: 2px solid rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.3);
     margin: 0 85px 30px;
 }
 
-.advantages-decoration-border:first-child,
-.advantages-decoration-border:last-child {
-    width: 60px;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    margin: 0 85px 30px;
+.white-line {
+    border-color: rgba(255, 255, 255, 0.3)
 }
-
 
 .advantages-description {
     margin: 0;
@@ -376,7 +372,7 @@ body {
     margin: 0 auto 40px;
 }
 
-.hotels-item {
+.hotels-card {
     display: grid;
     grid-template-columns: 140px 140px;
     grid-template-rows: 1fr 21px 36px 37px;
@@ -392,24 +388,24 @@ body {
     border-radius: 4px;
 }
 
-.hotels-item-image {
+.hotels-card-image {
     margin-bottom: 10px;
 }
 
-.hotels-item-link {
+.hotels-card-link {
     grid-area: link;
 }
 
-.hotels-item-title {
+.hotels-card-title {
     margin: 0;
 }
 
-.hotels-item-type {
+.hotels-card-type {
     grid-area: type;
     margin: 0;
 }
 
-.hotels-item-price {
+.hotels-card-price {
     grid-area: price;
     margin: 0;
     margin-left: auto;
@@ -440,13 +436,13 @@ body {
 padding-right: 0;
 }
 
-.hotels-item-rating {
+.hotels-card-rating {
     grid-area: rating;
     margin: 0;
     padding: 9px 22px 8px 23px;
 }
 
-.hotels-item-link {
+.hotels-card-link {
     font-size: 24px;
     line-height: 28px;
     font-weight: 700;
@@ -454,15 +450,15 @@ padding-right: 0;
     color: #000000;
 }
 
-.hotels-item-rating {
+.hotels-card-rating {
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
 }
 
-.border {
+.line-separator {
     width: 1060px;
-    border: 1px solid #E5E5E5;
+    border-top: 1px solid #E5E5E5;
     margin: 0 70px 40px;
 }
 
@@ -519,8 +515,8 @@ padding-right: 0;
 
 .advantages-description,
 .services-description,
-.hotels-item-type,
-.hotels-item-price {
+.hotels-card-type,
+.hotels-card-price {
     font-size: 18px;
     line-height: 21px;
 }
@@ -665,6 +661,16 @@ padding-right: 0;
     padding: 12px 20px;
     border: 2px solid #E5E5E5;
     border-radius: 4px;
+    cursor: pointer;
+}
+
+.catalog-sort:hover,
+.catalog-sort:focus {
+    border-color: rgba(104, 162, 202, 1);
+}
+
+.catalog-sort:disabled {
+    border-color: rgba(0, 0, 0, 0.3)
 }
 
 .view-mode-list {
