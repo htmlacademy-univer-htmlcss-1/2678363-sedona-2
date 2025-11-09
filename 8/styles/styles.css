@@ -489,6 +489,10 @@ padding-right: 0;
     height: 100%;
 }
 
+.background-white {
+    background-color: #FFFFFF;
+}
+
 .pagination-link {
     display: flex;
     justify-content: center;
@@ -557,6 +561,7 @@ padding-right: 0;
 }
 
 .subscription-form-input {
+    font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 24px;
     background-color: rgba(242, 242, 242, 1);
