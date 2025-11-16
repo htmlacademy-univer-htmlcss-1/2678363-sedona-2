@@ -52,11 +52,11 @@
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link" href="index.html">
                   <span class="visually-hidden">Главная</span>
-                  <img src="images/icons/main.svg">
+                  <img src="images/icons/main.svg" alt="Вернуться на главную">
                 </a>
               </li>
               <li class="breadcrumbs-item right-arrow">
-                <img src="images/icons/right-arrow.svg">
+                <img src="images/icons/right-arrow.svg" alt="">
               </li>
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link">Гостиницы</a>
@@ -97,21 +97,21 @@
                 <ul class="hotels-filter-list">
                   <li class="hotels-filter-item">
                     <label class="hotels-filter-label">
-                      <input class="visually-hidden hotels-filter-radio" type="radio" name="hotel-type" value="hotel" checked>
+                      <input class="visually-hidden hotels-filter-input" type="radio" name="hotel-type" value="hotel" checked>
                       <span class="radio-mark"></span>
                       <span class="filter-label">Гостиница</span>
                     </label>
                   </li>
                   <li class="hotels-filter-item">
                     <label class="hotels-filter-label">
-                      <input class="visually-hidden" type="radio" name="hotel-type" value="motel">
+                      <input class="visually-hidden hotels-filter-input" type="radio" name="hotel-type" value="motel">
                       <span class="radio-mark"></span>
                       <span class="filter-label">Мотель</span>
                     </label>
                   </li>
                   <li class="hotels-filter-item">
                     <label class="hotels-filter-label">
-                      <input class="visually-hidden hotels-filter-radio" type="radio" name="hotel-type" value="apartments">
+                      <input class="visually-hidden hotels-filter-input" type="radio" name="hotel-type" value="apartments">
                       <span class="radio-mark"></span>
                       <span class="filter-label">Апартаменты</span>
                     </label>
@@ -152,21 +152,24 @@
           <header class="catalog-header">
             <h2 class="catalog-title">Найдено гостиниц: 38</h2>
             <div class="catalog-view-tools">
+              <svg width="12" height="8" viewBox="0 0 12 8" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.6 6.725L11.7 1.425C12 1.125 12 0.525 11.7 0.225C11.4 -0.075 10.8 -0.075 10.5 0.225L6 4.925L1.5 0.225C1.2 -0.075 0.6 -0.075 0.3 0.225C0.1 0.325 0 0.625 0 0.825C0 1.025 0.1 1.225 0.3 1.425L5.4 6.725C5.7 7.125 6.3 7.125 6.6 6.725Z"/>
+              </svg>
               <select class="catalog-sort">
                 <option value="cheap">Сначала дешевые</option>
               </select>
               <ul class="view-mode-list">
-                <li class="view-mode-item view-list">
+                <li tabindex="1" class="view-mode-item view-list current-view">
                   <a class="view-mode-link" href="#">
                     <span class="visually-hidden">Показать список</span>
                   </a>
                 </li>
-                <li class="view-mode-item view-description">
+                <li tabindex="2" class="view-mode-item view-description">
                   <a class="view-mode-link" href="#">
                     <span class="visually-hidden">Показать товар с описанием</span>
                   </a>
                 </li>
-                <li class="view-mode-item view-cards">
+                <li tabindex="3" class="view-mode-item view-cards">
                   <a class="view-mode-link" href="#">
                     <span class="visually-hidden">Показать карточки</span>
                   </a>
@@ -185,10 +188,10 @@
               <a class="button hotels-button" href="#">Подробнее</a>
               <button class="button hotels-button additional" type="button">В избранное</button>
               <div class="stars-number">
-                <img class="star" src="images/icons/star.svg">
-                <img class="star" src="images/icons/star.svg">
-                <img class="star" src="images/icons/star.svg">
-                <img class="star" src="images/icons/star.svg">
+                <img class="star" src="images/icons/star.svg" alt="">
+                <img class="star" src="images/icons/star.svg" alt="">
+                <img class="star" src="images/icons/star.svg" alt="">
+                <img class="star" src="images/icons/star.svg" alt="">
               </div>
               <p class="hotels-card-rating">Рейтинг: 8,5</p>
             </li>
@@ -202,10 +205,10 @@
               <a class="button hotels-button" href="#">Подробнее</a>
               <button class="button hotels-button optional" type="button">В избранном</button>
               <div class="stars-number">
-                <img class="star" src="images/icons/star.svg">
-                <img class="star" src="images/icons/star.svg">
-                <img class="star" src="images/icons/star.svg">
-                <img class="star" src="images/icons/star.svg">
+                <img class="star" src="images/icons/star.svg" alt="">
+                <img class="star" src="images/icons/star.svg" alt="">
+                <img class="star" src="images/icons/star.svg" alt="">
+                <img class="star" src="images/icons/star.svg" alt="">
               </div>
               <p class="hotels-card-rating">Рейтинг: 9,2</p>
             </li>
@@ -219,9 +222,9 @@
               <a class="button hotels-button" href="#">Подробнее</a>
               <button class="button hotels-button additional" type="button">В избранное</button>
               <div class="stars-number">
-                <img class="star" src="images/icons/star.svg">
-                <img class="star" src="images/icons/star.svg">
-                <img class="star" src="images/icons/star.svg">
+                <img class="star" src="images/icons/star.svg" alt="">
+                <img class="star" src="images/icons/star.svg" alt="">
+                <img class="star" src="images/icons/star.svg" alt="">
               </div>
               <p class="hotels-card-rating">Рейтинг: 6,9</p>
             </li>
@@ -235,8 +238,8 @@
               <a class="button hotels-button" href="#">Подробнее</a>
               <button class="button hotels-button additional" type="button">В избранное</button>
               <div class="stars-number">
-                <img class="star" src="images/icons/star.svg">
-                <img class="star" src="images/icons/star.svg">
+                <img class="star" src="images/icons/star.svg" alt="">
+                <img class="star" src="images/icons/star.svg" alt="">
               </div>
               <p class="hotels-card-rating">Рейтинг: 5,0</p>
             </li>
