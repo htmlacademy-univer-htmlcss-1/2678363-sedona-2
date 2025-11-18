@@ -390,9 +390,10 @@ body {
 }
 
 .hotels-filter-input:checked + .checkbox-mark {
-    background-image: url(/images/icons/catalog/checkbox-mark.svg);
+    background-image: url(../images/icons/catalog/checkbox-mark.svg);
     background-repeat: no-repeat;
     background-position: 4px 6px;
+    z-index: 1;
 }
 
 .radio-mark {
@@ -407,9 +408,10 @@ body {
 }
 
 .hotels-filter-input:checked +.radio-mark {
-    background-image: url(/images/icons/catalog/radio-mark.svg);
+    background-image: url(../images/icons/catalog/radio-mark.svg);
     background-repeat: no-repeat;
     background-position: center;
+    z-index: 1;
 }
 
 .hotels-filter-input:hover + .checkbox-mark,
