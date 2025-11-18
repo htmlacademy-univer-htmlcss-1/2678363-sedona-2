@@ -126,14 +126,14 @@ body {
 }
 
 .actions-search {
-    background-image: url(../images/icons/page-header/search.svg);
+    background-image: url("../images/icons/page-header/search.svg");
     background-repeat: no-repeat;
     background-size: 20px 20px;
     background-position: center;
 }
 
 .actions-favourites {
-    background-image: url(../images/icons/page-header/favourites.svg);
+    background-image: url("../images/icons/page-header/favourites.svg");
     background-repeat: no-repeat;
     background-size: 20px 20px;
     background-position: center;
@@ -390,10 +390,9 @@ body {
 }
 
 .hotels-filter-input:checked + .checkbox-mark {
-    background-image: url(../images/icons/catalog/checkbox-mark.svg);
+    background-image: url("../images/icons/catalog/checkbox-mark.svg");
     background-repeat: no-repeat;
     background-position: 4px 6px;
-    z-index: 1;
 }
 
 .radio-mark {
@@ -408,10 +407,9 @@ body {
 }
 
 .hotels-filter-input:checked +.radio-mark {
-    background-image: url(../images/icons/catalog/radio-mark.svg);
+    background-image: url("../images/icons/catalog/radio-mark.svg");
     background-repeat: no-repeat;
     background-position: center;
-    z-index: 1;
 }
 
 .hotels-filter-input:hover + .checkbox-mark,
@@ -751,7 +749,7 @@ padding-right: 0;
 }
 
 .hotels-container {
-    background-image: url(../images/backgrounds/catalog-background.jpg);
+    background-image: url("../images/backgrounds/catalog-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 35px 70px 70px 70px;
@@ -889,15 +887,15 @@ select {
 }
 
 .view-list {
-    background-image: url(../images/icons/view-mode/view-list.png);
+    background-image: url("../images/icons/view-mode/view-list.png");
 }
 
 .view-description {
-    background-image: url(../images/icons/view-mode/view-description.png);
+    background-image: url("../images/icons/view-mode/view-description.png");
 }
 
 .view-cards {
-    background-image: url(../images/icons/view-mode/view-cards.png);
+    background-image: url("../images/icons/view-mode/view-cards.png");
     margin-right: 0;
 }
 
@@ -1309,20 +1307,22 @@ input::-webkit-calendar-picker-indicator {
     width: 19px;
     height: 9px;
     position: absolute;
-    background-image: url("/images/icons/triangle.png");
-    background-repeat: no-repeat;
     top: -9px;
     left: 117px;
     color: #68A2CA;
 }
 
-.tooltip:hover > .tooltip-text,
-.tooltip:focus > .tooltip-text {
-    display: block;
+.triangle-icon {
+    position: absolute;
+    top: -9px;
+    left: 116px;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-bottom: 10px solid #333333;
 }
 
-.input-arrival-date:checked + .tooltip-text,
-.input-departure-date:checked + .tooltip-text {
+.tooltip:hover > .tooltip-text,
+.tooltip:focus > .tooltip-text {
     display: block;
 }
 
